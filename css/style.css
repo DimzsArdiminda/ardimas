@@ -1,0 +1,213 @@
+/* mobile */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .card-body {
+        text-align: left;
+    }
+
+    .me--mobile-6 {
+        margin-right: 6rem !important;
+    }
+
+    .me-mobile-5 {
+        margin-right: 5rem !important;
+    }
+
+    .me-mobile-4 {
+        margin-right: 5rem;
+    }
+
+    .me-mobile-3 {
+        margin-right: 3rem;
+    }
+
+    .me-mobile-2 {
+        margin-right: 2rem;
+    }
+
+    .me-mobile-1 {
+        margin-right: 1rem;
+    }
+
+    .me-mobile-0 {
+        margin-right: 0rem;
+    }
+
+    .kanan {
+        margin-left: 0;
+        margin-right: 10rem;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    .kanan-c {
+        margin-left: 4.5rem;
+        justify-content: center;
+        width: 15rem !important;
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+
+    .ukuran {
+        size: 100%;
+    }
+
+    .mt-mobile-2 {
+        margin-top: 2rem;
+    }
+
+    .mt-mobile-4 {
+        margin-top: 4rem;
+    }
+
+    .mb-mobile-3 {
+        margin-bottom: 3rem;
+    }
+
+    .me-mobile-7 {
+        margin-left: 2rem;
+    }
+
+    .margin-left {
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .foto-1 {
+        width: 1rem;
+    }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 576px) and (max-width: 850px) {
+    .mt-tablet-2 {
+        margin-top: 3rem;
+    }
+
+    .margin-left {
+        margin-left: 50rem;
+    }
+}
+
+
+/* floating */
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+#chat-button {
+    background-color: #666e72;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px; /* Atur lebar floating button di sini */
+    height: 50px; /* Atur tinggi floating button di sini */
+}
+
+#chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#chat-header {
+    background-color: #738a94;
+    color: #363535;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+
+#chat-content {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+#chat-input input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+#chat-input button {
+    background-color: #738a94;
+    border-color: black;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+#chat-button:hover {
+    background-color: #128C7E;
+}
+
+#chat-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 8px;
+    margin: 4px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+.sent {
+    align-self: flex-end;
+    background-color: #128C7E;
+    color: #fff;
+    max-width: max-content;
+    animation: fadeIn 0.5s ease; /* Animasi untuk pesan masuk */
+}
+
+.received {
+    align-self: flex-start;
+    background-color: #3d3c3c;
+    color: #ffffffc0;
+    max-width: max-content;
+    animation: fadeIn 0.5s ease; /* Animasi untuk pesan masuk */
+}
+
+/* Animasi fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
