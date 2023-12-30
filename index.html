@@ -155,22 +155,14 @@
             <a class="nav-link active" aria-current="page" href="Tugas Portofolio.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <a href=""></a>
           </li>
           <li class="nav-item">
             <a class="nav-link"
               href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAD69D3EBUAoztj6MO3G4CwJFTiioSbT-M6k&keywords=dimas%20ardiminda%20edia%20putra&origin=RICH_QUERY_SUGGESTION&position=0&searchId=6f1f4be3-88c5-4200-9eec-0b22ae8bf7dd&sid=sjC">Linkdlen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="Teman Dimas.html">Teman Dimas</a>
+            <a class="nav-link" href="https://www.linkedin.com/ambry/?x-li-ambry-ep=AQIRh__yQ4LNWQAAAYy4RfY7II5Jkr60siON0VdeGZKsGvRa5OXvV_xuGs3KQnPLKfxlCYRYYGGfHbxVuP_W0kFVTXyVhRULePGUbXeQ3_8DUJTSfJKY6nAQYwhLCQvFbm9Dw6yVAOIafcmS-d9_j0UPigPWMrnrz68v_Z6sjlw7roXho4lY5z4gd2KdN5RhSuHFOtZG_1LfKX9lDwbAoDJQESOYG-tZzcXODoVF5xzMfsViBvt3mrGGLnKQG0BO8ujlmmM3Cyf-UcIfkI2Wtt6UqMc7s6cIIdGMiFy5UJJ372iOhnRXvZn1O0ZjstNRGDo00MrmCd-KbSO6D5rZIumdDVZ43I1jzEaeAYIFyjLlyPuOjA_gTSyv2OGMIV78FIIPi8qkFF64S9OaC97LcE9qdZGYucCXUf-GApBomZQExsm-w6WiGGGL6qNmUEWOdObgDcAP9WnJBhzoU7k3hD6jdOsq4bgzn1T6tgEGy4lJkEiBU8T3B1f35Pt-9bnwZpj1ASpfCgji49UX9GB_c3ui8u1jL5Kb7mu8QK26v-UtNGFRT77G9asx2ZKysbB6D0ktcvk&x-ambry-um-filename=Profile.pdf">Lihat CV saya</a>
           </li>
         </ul>
       </div>
@@ -184,14 +176,21 @@
   <div id="chat-container">
     <div id="chat-button" onclick="toggleChat()">
       <span>&#9998;</span>
+      <div id="tooltip" class="text-start">
+        <p>berikan command sederhana <br>
+          1. siapa nama anda?<br>
+          2. apa kabar? <br>
+          3. dll
+        </p>
+      </div>
     </div>
     <div id="chat-popup">
       <div id="chat-header">
-        
+
         <div class="text-start">
           Halo, Assalamualaikum
-        berikan pertanyaan sederhana dan bot akan menjawabnya <br>
-      </div>
+          berikan pertanyaan sederhana dan bot akan menjawabnya <br>
+        </div>
         <span onclick="toggleChat()">&times;</span>
       </div>
       <div id="chat-content">
@@ -311,7 +310,7 @@
         <div class="row ">
           <!-- web 1 -->
           <div class="col-md-4 mt-3">
-            <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+            <div id="web1" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="/asset/foto/web 1/dashboard.png" class="d-block w-100" alt="web1">
@@ -329,13 +328,11 @@
                   <img src="/asset/foto/web 1/kode program.png" class="d-block w-100" alt="web1">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
-                data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#web1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"
-                data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#web1" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -349,7 +346,7 @@
 
           <!-- web 2 -->
           <div class="col-md-4 mt-3">
-            <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div id="web2" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="asset/foto/web 2/login.png" class="d-block w-100" alt="web2">
@@ -373,13 +370,11 @@
                   <img src="asset/foto/web 2/kode program.png" class="d-block w-100" alt="web2">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
-                data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#web2" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
-                data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#web2" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -395,7 +390,7 @@
 
           <!-- web 3 -->
           <div class="col-md-4 mt-3">
-            <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+            <div id="web3" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="asset/foto/web 3/dashboard.png" class="d-block w-100" alt="web3">
@@ -404,19 +399,113 @@
                   <img src="asset/foto/web 3/kode program.png" class="d-block w-100" alt="web3">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3"
-                data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#web3" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3"
-                data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#web3" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
             <p class="text-justify">web ini dibuat ketika pengumuman SNBT lagi <i>hype</i> di sosial media</p>
           </div>
+        </div>
+      </div>
+
+      <!-- baris 2 -->
+      <div class="row ">
+        <!-- web 1 -->
+        <div class="col-md-4 mt-3">
+          <div id="web4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/asset/foto/web 4/kode program 1.png" class="d-block w-100" alt="web1">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/foto/web 4/kode program 2.png" class="d-block w-100" alt="web1">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/foto/web 4/kode program 3.png" class="d-block w-100" alt="web1">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/foto/web 4/tampilan 1.png" class="d-block w-100" alt="web1">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/foto/web 4/tampilan 2.png" class="d-block w-100" alt="web1">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#web4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#web4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <p class="text-justify ">pada porto ini saya di minta untuk fiks bug pada tampilan dan pengambilan data dari
+            database pada web yang sudah ada</p>
+          </p>
+        </div>
+
+        <!-- web 2 -->
+        <div class="col-md-4 mt-3">
+          <div id="web5" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="asset/foto/web 5/login.png" class="d-block w-100" alt="web2">
+              </div>
+              <div class="carousel-item">
+                <img src="asset/foto/web 5/tampilan.png" class="d-block w-100" alt="web2">
+              </div>
+              <div class="carousel-item">
+                <img src="asset/foto/web 5/kode program 1.png" class="d-block w-100" alt="web2">
+              </div>
+              <div class="carousel-item">
+                <img src="asset/foto/web 5/kode program 2.png" class="d-block w-100" alt="web2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#web5" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#web5" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- caption -->
+          </div>
+          <p class="text-justify">
+            masih pada <i>hype</i> masuk ptn, saya membuat web pengumuman snmpmb  ini dengan menggunakan framework laravel
+            sebelum pengumuman snmpmb resmi dari pihak terkait. tujuannya hanya sekedar untuk "joke" dan memperbanyak
+            porto saja
+          </p>
+        </div>
+
+        <!-- web 3 -->
+        <div class="col-md-4 mt-3">
+          <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="asset/foto/web 3/dashboard.png" class="d-block w-100" alt="web3">
+              </div>
+              <div class="carousel-item">
+                <img src="asset/foto/web 3/kode program.png" class="d-block w-100" alt="web3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <p class="text-justify">web ini dibuat ketika pengumuman SNBT lagi <i>hype</i> di sosial media</p>
         </div>
       </div>
     </section>

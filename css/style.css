@@ -116,14 +116,49 @@
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    width: 50px; /* Atur lebar floating button di sini */
-    height: 50px; /* Atur tinggi floating button di sini */
+    width: 50px;
+    /*Aturlebarfloatingbuttondisini*/height: 50px;
+    /*Aturtinggifloatingbuttondisini*/position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#chat-button:hover {
+    background-color: #0e6a5d;
+}
+
+#tooltip {
+    position: absolute;
+    top: -150px; /* Sesuaikan dengan kebutuhan */
+    left: -50%;
+    transform: translateX(-50%);
+    background-color: #3d3c3c;
+    color: #ffffffc0;
+    padding: 16px;
+    border-radius: 8px;
+    display: none;
+    font-size: 12px;
+    width: 150px;
+}
+
+#chat-button:hover #tooltip {
+    display: block;
 }
 
 #chat-popup {
     display: none;
     position: fixed;
-    bottom: 80px;
+    bottom: 90px;
     right: 20px;
     width: 300px;
     border: 5px solid #ccc;

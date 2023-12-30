@@ -50,7 +50,7 @@ function sendMessage() {
 // PESAN
 function handleCustomQuestion(question) {
   if (question.toLowerCase() === "apa kabar?") {
-      addMessage("received", "Saya baik, terima kasih!");
+      addMessage("received", "alhamdulillah Saya baik, terima kasih!");
   } else if (question.toLowerCase() === "siapa nama anda?") { 
       setTimeout(() => {
           addMessage("received", "Nama saya Dimas ardiminda");
