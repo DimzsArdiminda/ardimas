@@ -108,7 +108,7 @@ function addMessage(type, text) {
       }, 5000); // Sesuaikan delay sesuai keinginan
   }
 
-  chatContent.scrollTop = chatContent.scrollHeight;
+//   chatContent.scrollTop = chatContent.scrollHeight;
 }
 
 
