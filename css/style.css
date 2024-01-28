@@ -101,10 +101,10 @@
 }
 
 
-/* floating */
+/* floating 1 */
 #chat-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
     z-index: 999;
 }
@@ -117,8 +117,10 @@
     border-radius: 50%;
     cursor: pointer;
     width: 50px;
-    /*Aturlebarfloatingbuttondisini*/height: 50px;
-    /*Aturtinggifloatingbuttondisini*/position: fixed;
+    /*Aturlebarfloatingbuttondisini*/
+    height: 50px;
+    /*Aturtinggifloatingbuttondisini*/
+    position: fixed;
     bottom: 10px;
     right: 10px;
     border: none;
@@ -133,13 +135,15 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 #chat-button:hover {
     background-color: #0e6a5d;
 }
 
 #tooltip {
     position: absolute;
-    top: -150px; /* Sesuaikan dengan kebutuhan */
+    top: -150px;
+    /* Sesuaikan dengan kebutuhan */
     left: -50%;
     transform: translateX(-50%);
     background-color: #3d3c3c;
@@ -159,7 +163,7 @@
     display: none;
     position: fixed;
     bottom: 90px;
-    right: 20px;
+    right: 50px;
     width: 300px;
     border: 5px solid #ccc;
     border-radius: 10px;
@@ -200,6 +204,7 @@
     padding: 15px;
     cursor: pointer;
 }
+
 #chat-button:hover {
     background-color: #128C7E;
 }
@@ -223,7 +228,8 @@
     background-color: #128C7E;
     color: #fff;
     max-width: max-content;
-    animation: fadeIn 0.5s ease; /* Animasi untuk pesan masuk */
+    animation: fadeIn 0.5s ease;
+    /* Animasi untuk pesan masuk */
 }
 
 .received {
@@ -231,7 +237,8 @@
     background-color: #3d3c3c;
     color: #ffffffc0;
     max-width: max-content;
-    animation: fadeIn 0.5s ease; /* Animasi untuk pesan masuk */
+    animation: fadeIn 0.5s ease;
+    /* Animasi untuk pesan masuk */
 }
 
 /* Animasi fadeIn */
@@ -240,10 +247,69 @@
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+/* floating 2 */
+.floating-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+#close-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-btn:hover {
+    background-color: #0056b3;
+}
