@@ -87,6 +87,10 @@ function handleCustomQuestion(question) {
         setTimeout(() => {
             addMessage("received", "Haiiiii....");
         }, 1000); // Sesuaikan delay sesuai keinginan
+    } else if (question.toLowerCase() === "sudah mengenal bahasa pemrograman apa saja?") {
+        setTimeout(() => {
+            addMessage("received", "Start dari Python, PHP, C/C++, SQL, Java, Dart, HTML, CSS, JS(tahap pembelajaran),");
+        }, 1000); // Sesuaikan delay sesuai keinginan
     } else {
         setTimeout(() => {
             addMessage("received", "Mungkin kita bisa bicarakan lewat email, silahkan hubungi saya di dimasardiminda@gmail.com");
@@ -121,17 +125,49 @@ const faq = {
 };
 
 
-const floatingBtn = document.getElementById('floating-btn');
-const popupContainer = document.getElementById('popup-container');
-const closeBtn = document.getElementById('close-btn');
+// toogle 2
+// Toggle Popup Utama
+function togglePopup() {
+    var popupContainer = document.getElementById('popup-container');
+    popupContainer.style.display = popupContainer.style.display === 'flex' ? 'none' : 'flex';
+}
 
-floatingBtn.addEventListener('click', function () {
-    popupContainer.style.display = 'flex';
-});
-
-closeBtn.addEventListener('click', function () {
+// Tutup Popup Utama
+function closePopup() {
+    var popupContainer = document.getElementById('popup-container');
     popupContainer.style.display = 'none';
-});
+}
+
+// Tampilkan Popup Konten
+function showPopupContent(menuId) {
+    var popupContainer = document.getElementById('popup-container-' + menuId);
+    popupContainer.style.display = 'flex';
+    closePopup(); 
+}
+
+// Tutup Popup Konten
+function closePopupContent(menuId) {
+    var popupContainer = document.getElementById('popup-container-' + menuId);
+    popupContainer.style.display = 'none';
+    // Tutup popup utama setelah menutup popup konten
+}
+
+// Tampilkan Konten
+function showContent(menuId) {
+    var contents = document.querySelectorAll('.content');
+    contents.forEach(function (content) {
+        content.style.display = 'none';
+    });
+
+    var selectedContent = document.getElementById(menuId);
+    selectedContent.style.display = 'block';
+}
+
+
+
+
+
+
 
 // zoom
 window.onload = () => {

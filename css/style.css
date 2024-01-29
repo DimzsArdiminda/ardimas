@@ -261,12 +261,14 @@ body {
 }
 
 /* floating 2 */
+
+
 .floating-btn {
     position: fixed;
-    bottom: 40px;
-    right: 35px;
-    width: 40px;
-    height: 40px;
+    bottom: 20px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -301,6 +303,24 @@ body {
     margin-top: 0;
 }
 
+.popup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup ul li {
+    margin-bottom: 10px;
+}
+
+.popup ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.popup ul li a:hover {
+    color: #007bff;
+}
+
 #close-btn {
     background-color: #007bff;
     color: white;
@@ -312,6 +332,30 @@ body {
 
 #close-btn:hover {
     background-color: #0056b3;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: none;
+    margin-top: 20px;
 }
 
 /* zoom */

@@ -50,8 +50,8 @@
         <a class="navbar-brand" href="#">Dimas Ardiminda Edia Putra</a>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="asset/foto/Tambahkan subjudul (1).png" class="navbar-toggler-icon" alt="" style="border-radius: 15;">
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler-icon> 
+        <!-- <img src=" asset/foto/fotoDw.png" class="navbar-toggler-icon" alt="" style="border-radius: 15;"> -->
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -120,40 +120,97 @@
   </div>
 
   <!-- floating button 2 -->
+  <!-- Popup Utama -->
   <div class="popup-container" id="popup-container">
     <div class="popup">
-      <h2>Haloo Assalamualaikum </h2>
-      <p>Web ini dilengkapi dengan fitur bot dan dapat menjawab pertanyaan berikut
-        <ol>
-          <li>
-            Assalamualaikum
-          </li>
-          <li>
-            Apa Kabar?
-          </li>
-          <li>
-            Siapa nama anda?
-          </li>
-          <li>
-            bagaimana saya bisa menghubungi anda?
-          </li>
-          <li>
-            hai
-          </li>
-          <li>
-            selamat pagi
-          </li>
-          <li>
-            selamat siang
-          </li>
-        </ol>
-      </p>
-      <button id="close-btn">Tutup</button>
+      <h2>Pilihan Menu</h2>
+      <ul>
+        <li><a href="#" onclick="showPopupContent('menu1')">Menu Boot</a></li>
+        <li><a href="#" onclick="showPopupContent('menu2')">Keahlian</a></li>
+      </ul>
+      <button id="close-btn" onclick="closePopup()">Tutup</button>
     </div>
   </div>
 
-  <button class="floating-btn" id="floating-btn">+</button>
+  <!-- Tombol Floating Button -->
+  <button class="floating-btn btn-outline" id="floating-btn" onclick="togglePopup()">+</button>
 
+  <!-- Popup Konten Menu 1 -->
+  <div class="popup-container" id="popup-container-menu1">
+    <div class="popup">
+      <h2>Menu Bot</h2>
+      <small>bot dapat menjawab pertanyaan berikut</small>
+      <div class="row">
+        <div class="col-6">
+          <ol>
+            <li>
+              Assalamualaikum
+            </li>
+            <li>
+              Apa Kabar?
+            </li>
+            <li>
+              Siapa nama anda?
+            </li>
+            <li>
+              bagaimana saya bisa menghubungi anda?
+            </li>
+            <li>
+              sudah mengenal bahasa pemrograman apa saja?
+            </li>
+          </ol>
+        </div>
+        <div class="col-6">
+          <ol>
+            <li>
+              hai
+            </li>
+            <li>
+              selamat pagi
+            </li>
+            <li>
+              selamat siang
+            </li>
+            <li>
+              selamat sore
+            </li>
+            <li>
+              selamat malam
+            </li>
+          </ol>
+        </div>
+      </div>
+      <button onclick="closePopupContent('menu1')" class="btn btn-outline-primary">Tutup</button>
+    </div>
+  </div>
+
+  <!-- Popup Konten Menu 2 -->
+  <div class="popup-container" id="popup-container-menu2">
+    <div class="popup">
+      <h2>Keahlian</h2>
+      <p style="color: #212121;">It's too inappropriate to call it expertise heheh, it's better to use whatever programming language i've used</p>
+      <div class="row" > 
+        <div class="col-6">
+          <p style="color: #212121;">Bahasa pemrograman: </p>
+          <p style="color: #212121;">
+            Python <br>
+            java <br>
+            C/C++ <br>
+            dart <br>
+            juliana <br>
+          </p>
+        </div>
+        <div class="col-6">
+          <p style="color: #212121;">framework: </p>
+          <p style="color: #212121;">
+            laravel -> web <br>
+            flutter -> android dev/desktop dev <br>
+          </p>
+        </div>
+      </div>
+      <button onclick="closePopupContent('menu2')" class="btn btn-outline-primary">Tutup</button>
+    </div>
+  </div>
   <!-- end of floating -->
 
   <!-- Layout -->
@@ -174,8 +231,8 @@
         <p></p>
       </div>
       <div class="col-xl-4 col-12 col-sm-6 mb-mobile-3 animate__animated animate__backInDown">
-        <img src="asset/foto/IMG20211002175609-removebg-preview1.png" alt=".." width="250">
-        <h5 class=" me-2 mt-costum">Student of University Of Malang</h5>
+        <img src="asset/foto/fotoDw.png" alt=".." width="250">
+        <h5 class=" me-2 mt-costum">Student of State University Of Malang</h5>
         <div class="animate__animated animate__slideInLeft">
           <div class="row justify-content-end">
             <div class="col-12">
@@ -804,19 +861,21 @@
               <p class="mt-4">lihat sertifikat <a
                   href="/asset/sertif/Hacker X - Dimas Ardiminda - 1706465416181.pdf">disini</a></p>
             </div>
-            <!-- <div class="col-4">
-          <div class="card">
-            <img src="/asset/foto/sertif/MachienLerning.png" alt="">
-          </div>
-          <p class="mt-4">lihat sertifikat  <a href="/asset/sertif/Belajar Machine Learning.pdf">disini</a></p>
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="/asset/foto/sertif/fesmaro.png" alt="">
-          </div>
-          <p class="mt-4">lihat sertifikat <a href="/asset/sertif/Dimas Ardiminda EP. FINALIS.pdf">disini</a></p>
-        </div> -->
-          </div>
+            <div class="col-4">
+              <div class="card">
+                <div id="lightbox"></div>
+                <img src="/asset/foto/sertif/Prosedural PY.png" class="zoomD" alt="">
+              </div>
+              <p class="mt-4">lihat sertifikat <a
+                  href="/asset/sertif/sertifikat_course_pemrogrman porsedural python.pdf">disini</a></p>
+              <!-- </div>
+            <div class="col-4">
+              <div class="card">
+                <img src="/asset/foto/sertif/fesmaro.png" alt="">
+              </div>
+              <p class="mt-4">lihat sertifikat <a href="/asset/sertif/Dimas Ardiminda EP. FINALIS.pdf">disini</a></p>
+            </div> -->
+            </div>
     </section>
     <!-- end of sertif -->
 
