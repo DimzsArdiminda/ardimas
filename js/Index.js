@@ -114,7 +114,7 @@ function addMessage(type, text) {
         if (text.trim() !== "") {
             setTimeout(() => {
                 sendMessage(); // Fungsi untuk menampilkan pesan jawaban dari bot
-            }, 5000); // Sesuaikan delay sesuai keinginan
+            }, 9000); // Sesuaikan delay sesuai keinginan
         }
     }
 }
