@@ -765,10 +765,57 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  header {
+    padding: 1.5rem 3%;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 3rem 3%;
+  }
+
+  .hero-content {
+    gap: 3rem;
+  }
+
+  .section {
+    padding: 4rem 3%;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
+  header {
+    padding: 1rem 3%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 0.75rem;
+  }
+
+  .hero {
+    padding: 2rem 3%;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .hero-profile {
@@ -776,33 +823,40 @@ footer {
   }
 
   .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .glitch {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
 
   .hero-subtitle {
     font-size: 1rem;
   }
 
-  nav ul {
-    gap: 1rem;
+  .typing-text {
+    font-size: 0.9rem;
   }
 
-  nav a {
-    font-size: 0.8rem;
+  .cta-button {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .section {
+    padding: 3rem 3%;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .about-content {
@@ -812,6 +866,88 @@ footer {
 
   .social-buttons {
     grid-template-columns: 1fr;
+    max-width: 250px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .contact-links {
+    gap: 1.5rem;
+  }
+
+  .contact-link {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .glitch {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .typing-text {
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-card,
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
 
