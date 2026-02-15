@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <div>
-      <section className="section contact-section" id="contact">
+      <section className="section " id="contact">
         <h2 className="section-title fade-in">[ Let&apos;s Connect ]</h2>
         <p style={{ color: 'var(--text-secondary)', marginTop: '1rem' }}>
           Ready to collaborate on your next project?

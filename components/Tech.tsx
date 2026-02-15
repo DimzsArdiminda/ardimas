@@ -29,10 +29,8 @@ export default function Tech() {
             platforms.
           </p>
           <div className="skill-tags">
-            <span className="tag">React Native</span>
             <span className="tag">Flutter</span>
-            <span className="tag">Native</span>
-            <span className="tag">PWA</span>
+            <span className="tag">Java</span>
           </div>
         </div>
 
@@ -45,7 +43,7 @@ export default function Tech() {
           </p>
           <div className="skill-tags">
             <span className="tag">Node.js</span>
-            <span className="tag">Python</span>
+            <span className="tag">Django - Flask</span>
             <span className="tag">SQL</span>
             <span className="tag">NoSQL</span>
           </div>
@@ -75,7 +73,6 @@ export default function Tech() {
           </p>
           <div className="skill-tags">
             <span className="tag">Pentesting</span>
-            <span className="tag">OWASP</span>
             <span className="tag">Encryption</span>
             <span className="tag">SSL/TLS</span>
           </div>
@@ -92,7 +89,6 @@ export default function Tech() {
             <span className="tag">Linux</span>
             <span className="tag">Docker</span>
             <span className="tag">CI/CD</span>
-            <span className="tag">AWS</span>
           </div>
         </div>
       </div>

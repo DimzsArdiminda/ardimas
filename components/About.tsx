@@ -8,9 +8,8 @@ export default function About() {
         <div className="about-text">
           <p>
             Saya adalah seorang programmer yang passionate dalam mengeksplorasi
-            berbagai domain teknologi. Dari mengembangkan sistem IoT yang
-            menghubungkan perangkat fisik dengan dunia digital, hingga membangun
-            aplikasi mobile yang digunakan oleh ribuan pengguna, saya selalu
+            berbagai domain teknologi. Dari mengembangkan pengoprasian sistem server, 
+            hingga membangun aplikasi mobile yang bisa digunakan oleh banyak orang , saya selalu
             tertantang untuk menciptakan solusi inovatif.
           </p>
 
@@ -31,7 +30,7 @@ export default function About() {
           </p>
 
           <p>
-            Filosofi saya dalam coding adalah: &quot;Write code that humans can read,
+            &quot;Write code that humans can read,
             and machines can execute efficiently.&quot; Saya percaya bahwa kode yang
             baik bukan hanya yang berfungsi, tetapi juga mudah dimaintain dan
             di-scale untuk masa depan.
