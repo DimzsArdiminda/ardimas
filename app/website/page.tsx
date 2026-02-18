@@ -8,7 +8,7 @@ export default function page() {
       id="projects"
       style={{ background: "var(--bg-secondary)" }}
     >
-      <h2 className="section-title fade-in">[ Featured Projects ]</h2>
+      <h2 className="section-title fade-in">[ Featured Projects - Website ]</h2>
       <div className="projects-grid">
         <CardFitur
             type="website"
